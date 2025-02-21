@@ -2,6 +2,7 @@ package com.example.event_management.models;
 
 import jakarta.persistence.*;
 import lombok.*;
+import java.util.Set;
 
 @Getter @Setter
 @NoArgsConstructor @AllArgsConstructor
@@ -22,5 +23,6 @@ public class User {
     private String password;
 
     @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
     private Role role;
 }

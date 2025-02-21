@@ -1,5 +1,7 @@
 package com.example.event_management.models;
 
 public enum Role {
-    UTENTE, ORGANIZZATORE
+    USER,
+    ORGANIZER,
+    ADMIN
 }

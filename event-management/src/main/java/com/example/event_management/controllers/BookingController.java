@@ -24,5 +24,7 @@ public class BookingController {
         } catch (Exception e) {
             return ResponseEntity.badRequest().body(e.getMessage());
         }
+
     }
+
 }

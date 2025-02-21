@@ -21,6 +21,7 @@ public class BookingService {
     /**
      * Crea una prenotazione per un evento
      */
+
     public Booking createBooking(BookingRequest request) {
         // Trova utente e evento nel database
         User user = userRepository.findById(request.getUserId())
@@ -45,4 +46,5 @@ public class BookingService {
 
         return booking;
     }
+
 }
